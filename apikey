@@ -1,0 +1,41 @@
+# AIzaSyBAM3yzsZQ9byaGF0r2I7EzS7TXxgmWsq8
+
+# AIzaSyAEMeWgeUm5zc7D4mjUdh_gkdRdyYf_ZcU
+
+# from geopy.geocoders import Nominatim
+# from geopy import distance
+# import folium
+
+# geocoder = Nominatim(user_agent="i know python!")
+
+# location1 = input("Enter the first location: ")
+# location2 = input("Enter the second location: ")
+
+# coordinates1 = geocoder.geocode(location1)
+# coordinates2 = geocoder.geocode(location2)
+
+# if coordinates1 is None:
+#     print(f"Location '{location1}' not found.")
+# elif coordinates2 is None:
+#     print(f"Location '{location2}' not found.")
+# else:
+#     lat1, long1 = coordinates1.latitude, coordinates1.longitude
+#     lat2, long2 = coordinates2.latitude, coordinates2.longitude
+
+#     place1 = (lat1, long1)
+#     place2 = (lat2, long2)
+
+#     distance_between_places = distance.distance(place1, place2)
+
+#     m = folium.Map(location=[(lat1 + lat2) / 2, (long1 + long2) / 2], zoom_start=10)
+
+#     folium.Marker([lat1, long1], tooltip=location1).add_to(m)
+#     folium.Marker([lat2, long2], tooltip=location2).add_to(m)
+
+#     folium.PolyLine([place1, place2], color="blue", weight=2.5, opacity=1).add_to(m)
+
+#     folium.Marker([(lat1 + lat2) / 2, (long1 + long2) / 2],
+#                   icon=folium.DivIcon(html=f"<div>{distance_between_places}</div>"),
+#                   tooltip=f"Distance: {distance_between_places}").add_to(m)
+
+#     m.save("map_with_distance.html")
